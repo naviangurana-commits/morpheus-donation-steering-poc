@@ -1,0 +1,8 @@
+forge Version: 1.8.6
+Commit SHA: 6bad0a66de7c83f7b33695044138f0f5fa4c5990
+Build Timestamp: 2026-10-21T17:44:12.747118000Z (1792604652)
+Build Profile: dist
+cast Version: 1.8.6
+Commit SHA: 6bad0a66de7c83f7b33695044138f0f5fa4c5990
+Build Timestamp: 2026-10-21T17:44:12.747118000Z (1792604652)
+Build Profile: dist

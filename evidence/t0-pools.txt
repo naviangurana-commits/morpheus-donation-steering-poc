@@ -1,0 +1,100 @@
+Compiler run successful with warnings:
+Warning (2018): Function state mutability can be restricted to view
+   --> test/T2_DonationSteering.t.sol:205:5:
+    |
+205 |     function test_T0_PoolProbe() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Ran 1 test for test/T2_DonationSteering.t.sol:T2_DonationSteeringTest
+[PASS] test_T0_PoolProbe() (gas: 1256424)
+Logs:
+  distributor proxy: 0xDf1AC1AC255d91F5f4B1E3B4Aef57c5350F64C7A
+  implementation (EIP-1967 slot): 0x52f76e8be3dFABcC3b0DEd02882A22BE47DADE03
+  minRewardsDistributePeriod (s): 86400
+  rewardPoolLastCalculatedTimestamp: 1792757159
+  block.timestamp at pin: 1792981835
+  seconds since lastCalc: 224676
+  period rewards if distributed now: 7463322154946796227777
+  period rewards at +7d: 27533938725040980824999
+  period rewards at +30d: 93275817551250501644443
+  --- index-0 deposit pools (at pin) ---
+  pool: 0x47176B2Af9885dC6C4575d4eFd63895f7Aaa4790
+    token: 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84
+    chainLinkPath: stETH/USD
+    strategy (0=NONE,1=NO_YIELD,2=AAVE): 0
+    aToken: 0x0000000000000000000000000000000000000000
+    deposited: 7385800631439887134411
+    lastUnderlyingBalance: 7386709106680043506741
+    stored tokenPrice: 2399731105530000000000
+    distributor measured-asset balance: 7388177401331809770922
+    depositToken() check: 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84
+    feed: 0xCfE54B5cD566aB89272946F602D76Ea879CAb4a8
+      allowedPriceUpdateDelay: 3600
+      latest answer: 230360050000
+      latest updatedAt: 1792979099
+  pool: 0xdE283F8309Fd1AA46c95d299f6B8310716277A42
+    token: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
+    chainLinkPath: wBTC/BTC,BTC/USD
+    strategy (0=NONE,1=NO_YIELD,2=AAVE): 2
+    aToken: 0x5Ee5bf7ae06D1Be5997A1A72006FE6C607eC6DE8
+    deposited: 10297537
+    lastUnderlyingBalance: 10297553
+    stored tokenPrice: 81428751451340000000000
+    distributor measured-asset balance: 10297556
+    depositToken() check: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
+    feed: 0xfdFD9C85aD200c506Cf9e21F1FD8dd01932FBB23
+      allowedPriceUpdateDelay: 86400
+      latest answer: 99819999
+      latest updatedAt: 1792963703
+    feed: 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
+      allowedPriceUpdateDelay: 3600
+      latest answer: 7981570119603
+      latest updatedAt: 1792980431
+  pool: 0x9380d72aBbD6e0Cc45095A2Ef8c2CA87d77Cb384
+    token: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
+    chainLinkPath: wETH/USD
+    strategy (0=NONE,1=NO_YIELD,2=AAVE): 2
+    aToken: 0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8
+    deposited: 10910000000000000000
+    lastUnderlyingBalance: 10917192575035233774
+    stored tokenPrice: 2396083162340000000000
+    distributor measured-asset balance: 10918200511354207658
+    depositToken() check: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
+    feed: 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
+      allowedPriceUpdateDelay: 3600
+      latest answer: 230833000000
+      latest updatedAt: 1792978775
+  pool: 0x6cCE082851Add4c535352f596662521B4De4750E
+    token: 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+    chainLinkPath: USDC/USD
+    strategy (0=NONE,1=NO_YIELD,2=AAVE): 2
+    aToken: 0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c
+    deposited: 610434288888
+    lastUnderlyingBalance: 610434288887
+    stored tokenPrice: 999856680000000000
+    distributor measured-asset balance: 610613720093
+    depositToken() check: 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+    feed: 0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6
+      allowedPriceUpdateDelay: 86400
+      latest answer: 99982308
+      latest updatedAt: 1792964807
+  pool: 0x3B51989212BEdaB926794D6bf8e9E991218cf116
+    token: 0xdAC17F958D2ee523a2206206994597C13D831ec7
+    chainLinkPath: USDT/USD
+    strategy (0=NONE,1=NO_YIELD,2=AAVE): 2
+    aToken: 0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a
+    deposited: 4738988446
+    lastUnderlyingBalance: 4740869785
+    stored tokenPrice: 998910000000000000
+    distributor measured-asset balance: 4742014401
+    depositToken() check: 0xdAC17F958D2ee523a2206206994597C13D831ec7
+    feed: 0x3E7d1eAB13ad0104d2750B8863b489D65364e32D
+      allowedPriceUpdateDelay: 86400
+      latest answer: 99872000
+      latest updatedAt: 1792939475
+  PROBE DONE - choose TARGET_POOL (smallest USD TVL, strategy != 1) and set it in the test file.
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 13.43s (12.37s CPU time)
+
+Ran 1 test suite in 13.45s (13.43s CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)
